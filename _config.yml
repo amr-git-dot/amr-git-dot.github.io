@@ -101,7 +101,7 @@ author:
   links:
     - label: "About Me"
       icon: "fas fa-fw fa-link"
-      url: "https://amr-git-dot.github.io/aboutme/"
+     # url: "https://amr-git-dot.github.io/aboutme/"
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
       url: "mailto:amr.ashraf.re@outlook.com"
