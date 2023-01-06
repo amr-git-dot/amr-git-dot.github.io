@@ -10,11 +10,11 @@ categories:
 toc: true
 ---
 
-# Description:
+# Description
 BOTSv1 is a real world cyberdefenders ctf.
 It uses Splunk as a SIEM tool to use it in threat hunting.
 
-# Reconnaissane :
+# Reconnaissane 
 The name of the company website is "imreallynotbatman.com"
 
 staring search with the filter "index="botsv1" imreallynotbatman.com"
@@ -64,7 +64,7 @@ we can also filter the uri which scanned by using the command
 
 from the output, it is clear that the attacker tries to scan Joomla site.
 
-# Delivery activity :
+# Delivery activity 
 in this phase, we use threat intelligence to gather information with previously collected
 data to search for adversaries.
 first, we can use the IP " 23.22.63.114" which we found from the logs to search for known 
@@ -75,7 +75,7 @@ malware or apt uses this IP.
 
 if we submit MD5 hashes to open sources such as VirusTotal or Hybrid Analysis, we can retrieve metadata about those samples, which is useful in future investigations.	
 
-# Exploitation activity :
+# Exploitation activity 
 In this phase, we’ll employ Splunk to uncover any exploitation activity on the network. Let’s us focus on stream:http sourcetype. The query is:
 "Index=botsv1 sourcetype="stream:http""
 then choosing http method to be "post"
