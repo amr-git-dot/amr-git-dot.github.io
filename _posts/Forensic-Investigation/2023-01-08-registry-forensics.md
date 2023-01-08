@@ -111,6 +111,7 @@ NTFS Last Access Time ON/OFF? :
 Network Interfaces :
 
 	SYSTEM\CurrentControlSet\Services\Tcpip\Parameters\Interfaces
+
 Historical Networks :
 
 	SOFTWARE\Microsoft\Windows NT\CurrentVersion\NetworkList\Signatures\Unmanaged
@@ -123,9 +124,10 @@ Network Types :
 	SOFTWARE\Microsoft\Windows NT\CurrentVersion\NetworkList\Prifiles
 
 Find the GUID from Historical Networks
-nametype value = 0x47 = wireless
-nametype value = 0x06 = wired
-nametype value = 0x17 = broadband(3G)
+- nametype value = 0x47 = wireless
+- nametype value = 0x06 = wired
+- nametype value = 0x17 = broadband(3G)
+
 "times there are stored in localtime"
 
 
@@ -138,7 +140,9 @@ System Auto Start Programs :
 	SOFTWARE\Microsoft\Windows\CurrentVersion\Run
 	SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\Explorer\Run
 	SYSTEM\CurrentControlSet\Services
+
 if start = 0x2 means start at boot.
+
 Shares of the System :
 
 	SYSTEM\CurrentControlSet\Services\lanmanserver\Shares\
@@ -167,7 +171,7 @@ Office file openning :
 	 NTUSER.DAT\software\Microsoft\Office\VERSION\User MRU\LiveID_####\File MRU
 
 Open Save MRU :
-	#files chosed from DialogBox
+        #files chosed from DialogBox
 
 	NTUSER.DAT\software\Microsoft\Windows\CurrentVersion\Explorer\ComDlg32\OpenSavePidMRU
 
@@ -184,8 +188,7 @@ Command line :
 
 GUI Program Execution :
 
-	NTUSER.DAT\software\Microsoft\Windows\CurrentVersion
-	\Search\RecentApps
+	NTUSER.DAT\software\Microsoft\Windows\CurrentVersion\Search\RecentApps
 	NTUSER.DAT\software\Microsoft\Windows\CurrentVersion\Explorer\UserAssist\{GUID}\Count
 	SYSTEM\CurrentControlSet\Control\SessionManager\AppCompatCache\AppCompatCache
 	Amcache.hve\Root\File\{Volume GUID}\#######
@@ -193,4 +196,5 @@ GUI Program Execution :
 	SYSTEM\CurrentControlSet\Services\dam\UserSettings\{SID}
 
 GUIDs -> CEBFF5CD... Executable File Execution
-	  -> F4E57C4B... Shortcut File Execution
+
+      -> F4E57C4B... Shortcut File Execution
