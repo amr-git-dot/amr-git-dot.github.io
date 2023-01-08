@@ -4,7 +4,7 @@ classes: wide
 header:
   teaser: /assets/images/forensic-investigation/registery.png
 ribbon: DodgerBlue
-description: "Important Keys to look at for registery analysis ..."
+description: "Important Keys to look at for registry analysis ..."
 categories:
   - Forensic investigation
 toc: true
@@ -13,11 +13,11 @@ toc: true
 
 ## Core knowledge
 
-Hives contains Keys and values :
+Hives contain Keys and values :
 - Keys are folders.
 - SubKeys are folders inside folders.
 - Values are data stored in the Keys.
-Hives contains info about :
+Hives contain info about :
 - Hardware.
 - User settings.
 - Software.
@@ -40,17 +40,17 @@ Keys have last write times and MRUlist "Most recent used"
 
 	AMCACHE.hve
 
-	There is also another place for storing the first mentioned hives in 
+	There is also another place for storing the first-mentioned hives in 
 	"%WinDir%\System32\Config\RegBack" 
-	which is mainly used as backup
+	which is mainly used as a backup
 
 `User` hives HKCU :
-each individual user has a registry hive that can show specific details as to user activity on a machine which is realy important aspects of computer forensics.
+each individual user has a registry hive that can show specific details as to user activity on a machine which is a really important aspect of computer forensics.
 you can find it at 
 "C:\Users\%USERNAME%\"
 
-	NOTE : the artifacts may not recorded emediatly to the registry.
-	They may be stored for some time in a .LOG file then push all of the changes that happend togather.
+	NOTE: the artifacts may not be recorded immediately to the registry.
+	They may be stored for some time in a .LOG file then push all of the changes that happened together.
 	this is used to minimize the IO operations to the registry.
 
 ## Collecting User Information
@@ -83,13 +83,13 @@ Microsoft portal accounts don't increase the login Count
 	Network Types
 	System Auto Start Programs
 	Shares of the System
-	Numper of Times Shutdown was Initiated
+	Number of Times Shutdown was Initiated
 	Last Shutdown Time
 
 Identify Microsoft OS Version :
 
 	SOFTWARE\Microsoft\Windows NT\CurrentVersion
-"installdate" key is apdated in many situation like restting the machine...etc
+"installdate" key is updated in many situations like resetting the machine...etc
 
 Current Control Set :
 
@@ -128,7 +128,7 @@ Find the GUID from Historical Networks
 - nametype value = 0x06 = wired
 - nametype value = 0x17 = broadband(3G)
 
-"times there are stored in localtime"
+"times there are stored in local time"
 
 
 
@@ -161,22 +161,22 @@ Typed PAths :
 
 	NTUSER.DAT\software\Microsoft\Windows\CurrentVersion\Explorer\TypedPaths
 
-File openning :
+File opening :
 
 	NTUSER.DAT\software\Microsoft\Windows\CurrentVersion\Explorer\RecentDocs
 
-Office file openning :
+Office file opening:
 
 	 NTUSER.DAT\software\Microsoft\Office\VERSION
 	 NTUSER.DAT\software\Microsoft\Office\VERSION\User MRU\LiveID_####\File MRU
 
 Open Save MRU :
-        #files chosed from DialogBox
+        #files chosen from DialogBox
 
 	NTUSER.DAT\software\Microsoft\Windows\CurrentVersion\Explorer\ComDlg32\OpenSavePidMRU
 
 Last Visited :
-	#files chosed from DialogBox
+	#files chosen from DialogBox
 
 	NTUSER.DAT\software\Microsoft\Windows\CurrentVersion\Explorer\ComDlg32\LastVisitedPidMRU
 
