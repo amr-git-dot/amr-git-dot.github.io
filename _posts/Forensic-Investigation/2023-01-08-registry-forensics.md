@@ -195,6 +195,6 @@ GUI Program Execution :
 	SYSTEM\CurrentControlSet\Services\bam\UserSettings\{SID}
 	SYSTEM\CurrentControlSet\Services\dam\UserSettings\{SID}
 
-GUIDs -> CEBFF5CD... Executable File Execution
+GUIDs => CEBFF5CD... Executable File Execution
 
-      -> F4E57C4B... Shortcut File Execution
+      => F4E57C4B... Shortcut File Execution
