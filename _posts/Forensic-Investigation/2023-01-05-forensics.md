@@ -2,7 +2,7 @@
 title: "Windows Forensics Investigation"
 classes: wide
 header:
-  teaser: /assets/images/forensic-investigation/forensics.jpg
+  teaser: /assets/images/forensic-investigation/forensics.png
 ribbon: DodgerBlue
 description: "Notes of study for Windows OS forensics ..."
 categories:
