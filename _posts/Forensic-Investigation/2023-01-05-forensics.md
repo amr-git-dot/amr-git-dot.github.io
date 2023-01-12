@@ -270,7 +270,7 @@ Track MSC USB devices plugged into the machine:
 	SYSTEM\CurrentControlSet\Enum\USBSTOR
 	SYSTEM\CurrentControlSet\Enum\USB
 
-Discover the volume name:
+Evidance of opening:
 
 		First, find the USB serial numbers:
 		SOFTWARE\Microsoft\Windows Portable Devices\Devices
