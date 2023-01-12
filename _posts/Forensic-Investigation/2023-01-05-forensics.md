@@ -286,3 +286,77 @@ First and last time connected & Removal time:
 - 0064 First install.
 - 0066 Last connected.
 - 0067 Last removal.
+
+# Email Forensics
+we will analyze "outlook"
+Emails are really hard to destroy
+
+What we can do?!
+
+- Who sent the email?
+- When was it sent?
+- Where was it sent from?
+- Is there relevant content?
+
+The email has three main parts
+
+- Mail header
+- Message body
+- Attachment
+
+Emails Stored on the local machine ".PST & .OST"
+
+Archives stored by default in:
+
+	%USERPROFILE%\Documents\Outlook
+	HKEY_CURRENT_USER\Software\Microsoft\WindowsNT\CurrentVersion\Windows Messaging Subsystem\Profiles\Outlook\
+
+Archives can be up to 50 GB
+
+Secure Temp file is used to open the attachments
+"it persists only if the mail closed before the attachment or a crash"
+
+	%APPDATA%\Local\Microsoft\Windows\Temporary Files\Content.Outlook
+	%APPDATA%\Local\Microsoft\Windows\INetCache\Content.Outlook
+
+# Windows search database
+
+	C:\ProgramData\Microsoft\Search\Data\Applications\Windows\Windows.edb
+
+# Thumpnail Analysis
+
+These are the photos displayed in the explorer itself
+
+	C:\Users\%USERNAME%\AppData\Local\Microsoft\Windows\Explorer
+
+# Recycle Bin
+
+In $Recycle.bin there is a user SID 
+files started with $I##### contains 
+
+- original path and name
+- Recycled date/time
+
+files started with $R### contains
+
+- Recovery data
+
+# Windows Prefetch
+
+Record the first and the last time of execution and also a lot of metadata about the execution like file reference.
+
+	C:\Windows\Prefetch
+
+# SRUM "System Resource Usage Monitor"
+
+Keeps track of device resources used per app.
+
+	SOFTWARE\Microsoft\WindowsNT\CurrentVersion\SRUM\Extensions
+	C:\Windows\System32\SRU\
+
+what can SRUM analysis tell us:
+
+- Processes Run
+- App Push notification
+- Network activity
+- Energy usage
