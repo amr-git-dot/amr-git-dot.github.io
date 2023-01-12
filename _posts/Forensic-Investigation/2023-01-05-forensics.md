@@ -247,3 +247,42 @@ Found in :
     Desktop Access:
     NTUSER.DAT\Software\Microsoft\Windows\Shell\Bags
     NTUSER.DAT\Software\Microsoft\Windows\Shell\BagMRU    
+    
+# USB Analysis 
+
+- Determine Drive Letter Device and Volume Name.
+- Find the User That Used the Specific USB Device.
+- Discover the first time Device connected.
+- Determine the last time device connected.
+- Determine the time device was removed.
+
+		note:
+		Plug and Play Cleanup task in windows may remove this evidence after ~30 days.
+Plug and Play Log file(C:\windows\inf\setupapi.dev.log)
+
+Types of USB devices:
+- Mass storege class.
+- Picture Transfer Protocol." camera"
+- Media Transfer Protocol."phone"
+
+Track MSC USB devices plugged into the machine:
+
+	SYSTEM\CurrentControlSet\Enum\USBSTOR
+	SYSTEM\CurrentControlSet\Enum\USB
+
+Discover the volume name:
+
+		First, find the USB serial numbers:
+		SOFTWARE\Microsoft\Windows Portable Devices\Devices
+		then find the volume GUID:
+		SYSTEM\MountedDevices
+		Search the GUID in all users' hives:
+		NTUSER.DAT\Software\Microsoft\Windows\CurrentVersion\Explorer\Mountpoints2
+
+First and last time connected & Removal time:
+
+		SYSTEM\CurrentControlSet\Enum\USBSTOR\{Ven_Prod_Version}\{USB serial}\Properties\{83da6...}\
+
+- 0064 First install.
+- 0066 Last connected.
+- 0067 Last removal.
