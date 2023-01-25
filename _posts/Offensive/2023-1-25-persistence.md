@@ -2,7 +2,7 @@
 title: "Windows Persistence"
 classes: wide
 header:
-  teaser: /assets/images/esc.png
+  teaser: /assets/images/persist.png
 ribbon: DodgerBlue
 description: "Windows Persistence vectors explanation"
 categories:
