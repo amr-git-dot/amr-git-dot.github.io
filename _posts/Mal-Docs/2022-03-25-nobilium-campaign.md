@@ -1,5 +1,5 @@
 ---
-title: "Word File analysis"
+title: "Malicious Word File"
 classes: wide
 header:
   teaser: /assets/images/mal-docs/nobilium/javascript.png
