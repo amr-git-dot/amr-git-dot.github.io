@@ -315,12 +315,12 @@ To display the logs sent by Filebeat you can search in the search bar with
 
 ![error loading](/assets/images/forensic-investigation/SIEM-Build/kibanasearch.png)
 
-## Windows logs collection "Winlogbeat"
+# Windows logs collection "Winlogbeat"
 
 For the sake of more clarity we will add another log source to our SIEM which is windows event logs.
 We will need a windows machine to collect the events from So you can set up one as a virtual machine.
 
-### Installation
+## Installation
 
 - download Winlogbeat from the link below
 
@@ -335,7 +335,7 @@ We will need a windows machine to collect the events from So you can set up one 
         cd 'C:\Program Files\Winlogbeat'
         .\install-service-winlogbeat.ps1
 
-### Configure Winlogbeat
+## Configure Winlogbeat
 
 Open the "winlogbeat.yml" file to start configuration editting.
 
@@ -380,5 +380,7 @@ Going to our kibana we will find the new source "winlogbeat" added
 # Referencess
 
 "Jamon Camisso" article at Digital Ocean.
+
 [Suricata official site](https://suricata.readthedocs.io/en/latest/quickstart.html)
+
 [Elastic official site](https://www.elastic.co/guide/en/beats/winlogbeat/current/winlogbeat-installation-configuration.html)
