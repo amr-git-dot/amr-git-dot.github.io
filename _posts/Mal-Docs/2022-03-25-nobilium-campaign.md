@@ -1,5 +1,5 @@
 ---
-title: "nobilium campaign"
+title: "Word File analysis"
 classes: wide
 header:
   teaser: /assets/images/mal-docs/nobilium/javascript.png
@@ -59,7 +59,7 @@ checking the file type and sha256sum and performing basic static analysis on dif
 
 Here we notice that the malware has a TLS section means that there is a tls call-back function that will run before the start point of the application as an anti-debugging or VM technique.
 
-![error](Screensoots/tls.png)
+![error](/assets/images/mal-docs/nobilium/tls.png)
 
 Then looking into the exported functions we can quickly understand what this piece of malware does which is to gather the information from the infected machine and send it back to the C2 Server.
 
