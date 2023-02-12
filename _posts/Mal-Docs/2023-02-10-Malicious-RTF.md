@@ -2,7 +2,7 @@
 title: "Malicious RTF File"
 classes: wide
 header:
-  teaser: /assets/images/mal-docs/Malicious-RTF/.png
+  teaser: /assets/images/mal-docs/Malicious-RTF/exploit.png
 ribbon: DodgerBlue
 description: "Investigation for Phishing RTF File ..."
 categories:
