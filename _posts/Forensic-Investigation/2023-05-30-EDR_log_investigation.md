@@ -2,7 +2,7 @@
 title: "EDR Log Investigation"
 classes: wide
 header:
-  teaser: /assets/images/forensic-investigation/EDR_log_investigation/powershell.png
+  teaser: /assets/images/forensic-investigation/EDR_log_investigation/first.png
 ribbon: DodgerBlue
 description: "Investigating a Case through EDR logs in Kibana"
 categories:
