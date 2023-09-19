@@ -4,8 +4,8 @@ main:
     url: /categories/#malware-analysis
   - title: "Forensic investigation"
     url: /categories/#forensic-investigation
-  - title: "vulnrability research"
-    url: /categories/#vulnrability_research
+  - title: "vulnerability research"
+    url: /categories/#vulnerability_research
   - title: "Offensive"
     url: /categories/#offensive
   - title: "CTF"
